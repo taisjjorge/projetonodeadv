@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        h3 {
+            background: linear-gradient(to right, #2e4bbf, #fff);
+            color: #fff;
+            padding: 8px;
+            width: 100%;
+            text-shadow: 0.1em 0.05em #333
+        }
+        body {
+            background: linear-gradient(to right, #252525, #fff);
+        }
+        .card-body {
+            display: flex;
+            
+        }
+        form {
+            display: flex;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 ">
+        <div class="card">
+            <div class="card-header">
+                <h3>Localizaí</h3>
+                           
+            </div>
+            
+            <div class="card-body">
+                <form action="/envia-cep" method="POST">
+                    <div class="form-group">
+                              <label class="form-control my-3" for="cep">Busque pelo CEP da sua residência</label>
+                              <input class="form-control " type="text" name="cep" id="cep">
+                              <input type="submit" class="btn btn-outline-success mt-2" value="Buscar">                              
+                    </div>
+                </form>
+                <form action="/envia-cep" method="POST">
+                    <div class="form-group">
+                              <label class="form-control my-3 " for="cep">Busque pelo CEP do seu local de trabalho</label>
+                              <input class="form-control " type="text" name="cep" id="cep">
+                              <input type="submit" class="btn btn-outline-success mt-2" value="Buscar">                              
+                    </div>
+                </form>
+                
+        </div>
+    </div>
+</body>
+</html>
